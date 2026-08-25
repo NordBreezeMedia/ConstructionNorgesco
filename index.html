@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="./LOGOTRANSP.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Construction Norgesco — partenaire de confiance en rénovation résidentielle. Laval, Laurentides et Lanaudière."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Construction Norgesco</title>
+  </head>
+  <body>
+    <div class="site">
+      <header class="navbar">
+        <a class="navbar__brand" href="#home" aria-label="Construction Norgesco">
+          <img src="./LOGOTRANSP.png" alt="Construction Norgesco" class="navbar__logo" />
+        </a>
+        <nav class="tabs" aria-label="Primary">
+          <a href="#home" data-i18n="nav.home">Accueil</a>
+          <a href="#services" data-i18n="nav.services">Services</a>
+          <a href="#why" data-i18n="nav.why">À propos</a>
+          <a href="#areas" data-i18n="nav.areas">Secteurs</a>
+          <a href="#contact" data-i18n="nav.contact">Contact</a>
+          <div class="lang-toggle" role="group" aria-label="Language">
+            <button type="button" id="lang-fr" class="is-active" aria-pressed="true">FR</button>
+            <span aria-hidden>/</span>
+            <button type="button" id="lang-en" aria-pressed="false">EN</button>
+          </div>
+        </nav>
+      </header>
+
+      <section id="home" class="hero hero--photo-v3" aria-label="Projet de rénovation Construction Norgesco">
+        <div class="hero__overlay">
+          <div class="hero__copy">
+            <p data-i18n="hero.caption">Votre partenaire de confiance.</p>
+            <a class="btn btn--primary btn--pulse" href="#contact" data-i18n="hero.cta">
+              Demandez votre soumission gratuite
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="services-section">
+        <h2 data-i18n="services.title">Nos services</h2>
+        <div class="services-boxes" id="services-boxes">
+          <article class="service-box service-box--piece-1" style="--piece-delay: 0s">
+            <h3>Revêtement</h3>
+            <p>Façades durables et soignées qui protègent et embellissent votre maison.</p>
+            <a class="read-more" href="#contact">En savoir plus</a>
+          </article>
+          <article class="service-box service-box--piece-2" style="--piece-delay: 0.12s">
+            <h3>Portes et fenêtres</h3>
+            <p>Confort, efficacité énergétique et finitions nettes, du choix à l’installation.</p>
+            <a class="read-more" href="#contact">En savoir plus</a>
+          </article>
+          <article class="service-box service-box--piece-3" style="--piece-delay: 0.24s">
+            <h3>Sous-sol</h3>
+            <p>Transformer votre sous-sol en espace habitable, chaleureux et fonctionnel.</p>
+            <a class="read-more" href="#contact">En savoir plus</a>
+          </article>
+          <article class="service-box service-box--piece-4" style="--piece-delay: 0.36s">
+            <h3>Cuisine</h3>
+            <p>Une cuisine pensée pour votre quotidien, avec un suivi clair du début à la fin.</p>
+            <a class="read-more" href="#contact">En savoir plus</a>
+          </article>
+          <article class="service-box service-box--piece-5" style="--piece-delay: 0.48s">
+            <h3>Salle de bain</h3>
+            <p>Rénovation complète ou partielle, avec un souci du détail à chaque étape.</p>
+            <a class="read-more" href="#contact">En savoir plus</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="why" class="why-section">
+        <h2>
+          <span data-i18n="why.title">Pourquoi choisir</span>
+          <span data-i18n="why.brand">Norgesco</span> ?
+        </h2>
+        <p class="why-lead" data-i18n="why.lead">
+          Peu importe le projet — revêtement, portes et fenêtres, sous-sol, cuisine ou salle de bain — on veut l’entendre. Une équipe de confiance pour votre rénovation résidentielle.
+        </p>
+        <div class="why-row" id="why-circles">
+          <div class="why-circle">Expertise</div>
+          <div class="why-circle">Qualité</div>
+          <div class="why-circle">Fiabilité</div>
+          <div class="why-circle">Proximité</div>
+        </div>
+      </section>
+
+      <section id="areas" class="areas-section">
+        <h2 data-i18n="areas.title">Secteurs desservis</h2>
+        <p data-i18n="areas.lead">Nous desservons Laval, Laurentides et Lanaudière.</p>
+        <div class="areas-row" id="areas-row">
+          <div class="area-pill">Laval</div>
+          <div class="area-pill">Laurentides</div>
+          <div class="area-pill">Lanaudière</div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <h2 data-i18n="quiz.title">Contactez-nous</h2>
+        <p class="contact-lead" data-i18n="quiz.lead">
+          Répondez à 3 questions rapides et recevez une réponse personnalisée.
+        </p>
+        <div class="contact-layout">
+          <aside class="contact-info">
+            <h3 data-i18n="quiz.infoTitle">Coordonnées</h3>
+            <p data-i18n="quiz.infoAreas">Laval · Laurentides · Lanaudière</p>
+            <p data-i18n="quiz.infoHours">Lun–Ven : sur rendez-vous</p>
+          </aside>
+
+          <div class="quiz">
+            <div class="quiz__progress" aria-hidden>
+              <span id="quiz-progress"></span>
+            </div>
+            <div id="quiz-panel"></div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div>
+          <p data-i18n="footer.tagline">construction — gestion — rénovation</p>
+          <p>© <span id="year"></span> Construction Norgesco. <span data-i18n="footer.rights">Tous droits réservés.</span></p>
+        </div>
+      </footer>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
